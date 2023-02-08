@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* for all the container class */
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    color:black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 400;
+letter-spacing: .2rem;
+}
+
+ .cta{
+    display: flex-start;
+    padding: 10px 30px;
+    color: rgb(6, 50, 26);
+    background-color: transparent;
+    border: 2px solid rgb(39, 67, 39);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1 rem;
+    margin-top: 36px;
+    transition: .3s ease background-color;
+}
+.cta:hover{
+color: white;
+background-color: rgb(33, 163, 83);
+}
+/* for hamburgerC */
+
+@keyframes hamburger_puls {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(1.3);
+    }
+}
+/* for hamburger */
+/* for home.js #hero */
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+ 100%{
+    color: white;
+
+ }
+}
+
+ @keyframes text_reveal_name {
+    100%{
+        color: crimson;
+        font-weight: 500;
+    }
+ }
+
+ /* Media Query for laptop-screen */
+
+ @media only screen and (min-width:1000px)
+{
+    #header   .nav-list .hamburger{
+    display: none;
+     }
+
+    #header  .nav-bar .nav-list ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    
+    }
+    #header .nav-bar .nav-list ul li{
+        display: inline-block;
+    }
+    #header  .nav-bar .nav-list ul div:after{
+        display: none;
+
+    }
+    #header .nav-bar .nav-list ul div{
+        font-size: 1.5rem;
+    }
+
+#courses .courses-bottom .courses-item{
+    flex-basis:22%;
+    margin: 1.5%;
+
+}
+
+}
+
+
+/* Media Query for tab */
+@media only screen and (min-width:760px)
+  {
+    .cta{
+        font-size: 2.5 rem;
+        padding: 17px 50 px;
+
+    }
+   .course-title h1{
+    font-size: 7rem;
+     
+   }
+   #hero h1{
+    font-size: 5rem;
+   }
+
+
+
+     #courses .courses-bottom .courses-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    } 
+
+    
+    #topics .topic-item{
+        flex-direction: row;
+    }
+    #topics .topic-item:nth-child(even)
+    {
+        flex-direction: row-reverse;
+    }
+    /* above and below are quick fixes which need to get optimized */
+    #topics .topic-item:nth-child(odd)
+    {
+        flex-direction: row;
+    }
+    #topics .topic-item{
+          height: 400px;
+          margin: 0;
+          width: 100%;
+          border-radius: 0;                            
+          
+    }
+    #topics .all-topics .topic-info{
+        height: 100%;
+
+    }
+    #topics .all-topics .topic-image{
+        height: 100%;
+    }
+
+
+    
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img:after{
+        left:-45px;
+        top:34px;
+        height:98%;
+        width: 98%;
+        border: 10px solid crimson;
+
+    }
+    #about .about .col-right {
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1{
+        text-align: left;
+    }
+
+
+    #contact .contact{
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-height: 20vh;
+    }
+    #contact .contact-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+    #contact .contact-item{
+        width: 30%;
+        margin: 0;
+        flex-direction: row;
+    }
+
+    #contact .contact-item .contact-icon{
+        height: 100px;
+        width: 100px;
+
+    }
+    #contact .contact-item .contact-icon img{
+        object-fit: contain;
+    }
+    #contact .contact-item .contact-info{
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+
+    }
+
+    
+  }
+ 

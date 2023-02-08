@@ -1,0 +1,90 @@
+
+#courses .courses{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#courses .courses-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+text-align: center;
+}
+#courses .courses-top{
+    width: 500px;
+    max-margin:0 auto;
+}
+
+#courses .courses-title span{
+    color: crimson;
+
+}
+
+#courses .courses-top p{
+  
+
+}
+
+#courses .courses-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#courses .courses-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url('../../../../Images/codebg3.jpg');
+    background-size: cover;
+    margin: 10px 5%;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+}
+
+#courses .courses-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(243, 201, 153);
+    opacity: .2;
+    z-index: -1;
+}
+
+#courses .courses-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#courses .courses-bottom .icon img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+#courses .courses-item h2{
+    font-size: 2rem;
+    color: rgb(56, 24, 24);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+#courses .courses-item p{
+    color: white;
+    text-align: left;
+}
